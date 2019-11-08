@@ -1,0 +1,77 @@
+@media (max-width: 1360px)
+  .header
+    grid-template-rows: 1fr 1fr 7fr
+    grid-template-columns: 1fr 5fr 2fr
+    &-nav
+      grid-column: 2/4
+      grid-row: 2/3
+    &-logo
+      grid-column: 2/3
+      justify-self: start
+    &-contacts      
+      grid-column: 2/3
+      justify-self: end
+    &-text
+      grid-row: 3/4
+@media (max-width: 922px)
+  .header
+    grid-template-columns: 1fr 8fr 1fr
+    grid-template-rows: 1fr 0.5fr 0.7fr 10fr
+    &-contacts
+      grid-row: 2/3
+      justify-self: start
+    &-nav
+      grid-row: 3/4
+    &-text
+      grid-row: 4/5
+      grid-row-gap: 40px
+    &-title
+      font-size: 36px
+    &-subtitle
+      font-size: 18px
+      line-height: 24px
+@media (max-width: 768px)
+  .header
+    font-size: 15px
+    &-nav
+      display: grid
+      grid-template-columns: repeat(3, auto)
+    &-buttons
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &__link
+        display: inline-block
+        margin-top: 20px
+        margin-left: 20px
+    &-img
+      width: 300px
+  .thumbs
+    grid-template-columns: repeat(2, auto)
+    grid-gap:  10px
+    justify-content: start
+@media (max-width: 567px)
+  .header
+    grid-template-columns: auto
+    grid-template-rows: 1fr 0.3fr 0.8fr 6fr
+    &-nav
+      grid-template-columns: auto auto
+      grid-gap: 10px
+    &-img
+      width: 200px
+@media (max-width: 376px)
+  .header
+    &-contacts
+      &__phone
+        font-size: 18px
+  .button
+    padding: 24px 33px
+@media (max-width: 320px)
+  .header
+    &-contacts
+      &__phone
+        font-size: 15px
+      &__callback
+        font-size: 11px
+  .button
+    padding: 24px 23px
